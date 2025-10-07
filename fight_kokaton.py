@@ -173,7 +173,7 @@ class Score:
 
     def update(self, screen: pg.Surface):
         """
-        スコアを更新して画面に表示する
+        スコアを更新して画面に表示する。
         """
         self.img = self.fonto.render(f"Score: {self.value}", True, self.color)
         screen.blit(self.img, self.rect)
