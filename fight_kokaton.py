@@ -140,24 +140,26 @@ class Bomb:
         self.rct.move_ip(self.vx, self.vy)
         screen.blit(self.img, self.rct)
 
-class score:
-    """
-    スコアに関するクラス
-    """
-    def __init__(self):
-        self.font = pg.font.SysFont("hgp創英角ﾎﾟｯﾌﾟ体", 30)
-        self.color = (0, 0, 255)
-        self.value = 0
-        self.img = self.font.render("スコア: "(self.value), 0, self.color)
-        self.rect = self.img.get_rect()
-        self.rect.center = (100, HEIGHT - 50)
+# class score:
+#     """
+#     スコアに関するクラス
+#     """
+#     def __init__(self):
+#         self.font = pg.font.SysFont("hgp創英角ﾎﾟｯﾌﾟ体", 30)
+#         self.color = (0, 0, 255)
+#         self.value = 0
+#         self.img = self.font.render("スコア: "(self.value), 0, self.color)
+#         self.rect = self.img.get_rect()
+#         self.rect.center = (100, HEIGHT - 50)
 
-    def update(self, screen: pg.Surface):
-        """
-        スコアを更新して画面に表示する
-        """
-        self.img = self.font.render("スコア: "(self.value), 0, self.color)
-        screen.blit(self.img, self.rect)
+#     def update(self, screen: pg.Surface):
+#         """
+#         スコアを更新して画面に表示する
+#         """
+#         self.img = self.font.render("スコア: "(self.value), 0, self.color)
+#         screen.blit(self.img, self.rect)
+
+
 class Score:
     """
     スコアを管理・表示するクラス
